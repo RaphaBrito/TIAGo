@@ -3,7 +3,9 @@ TIAGo robot instalation tutorial
 
 ## Pré requisitos
   1. Ubuntu 14.04 LTS
-    wget http://releases.ubuntu.com/14.04/ubuntu-14.04.5-desktop-amd64.iso
+```sh
+$ wget http://releases.ubuntu.com/14.04/ubuntu-14.04.5-desktop-amd64.iso
+```
 ## ROS Indigo
 ### Instalação de dependências específicas do sistema:
 ```sh
@@ -46,7 +48,7 @@ $   sudo cp -i tiago_public.rosinstall ~/tiago_public_ws
 OBS: Lembre-se de está na pasta do arquivo que você precisa copiar.
 ```sh
 $   cd ~/tiago_public_ws
-$    sudo rosinstall src /opt/ros/indigo tiago_public.rosinstall
+$   sudo rosinstall src /opt/ros/indigo tiago_public.rosinstall
 $   echo "source ~/tiago_public_ws/src/setup.bash" >> ~/.bashrc
 $   source ~/.bashrc
 ```
