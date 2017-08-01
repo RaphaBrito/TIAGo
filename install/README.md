@@ -40,7 +40,9 @@ $   source ~/.bashrc
 ```sh
 $   mkdir ~/tiago_public_ws
 ```
-Copie o arquivo tiago_public.rosinstall (Pasta do drive) para /opt/ros/indigo e também para a workspace:
+Copie o arquivo tiago_public.rosinstall para /opt/ros/indigo e também para a workspace:
+ps: Arquivo no repositório: https://github.com/RaphaBrito/TIAGo/blob/master/install/tiago_public.rosinstall
+
 ```sh
 $   sudo cp -i tiago_public.rosinstall /opt/ros/indigo
 $   sudo cp -i tiago_public.rosinstall ~/tiago_public_ws
