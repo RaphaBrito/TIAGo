@@ -28,7 +28,8 @@ $   sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 
  ### Instalação de pacotes do ROS: 
  ```sh
 $   sudo apt-get update
-$   sudo apt-get install git python-rosinstall ros-indigo-desktop-full python-catkin-tools ros-indigo-joint-state-controller ros-indigo-twist-mux ros-indigo-ompl ros-indigo-controller-manager ros-indigo-moveit-ros-move-group ros-indigo-moveit-ros-planning-interface ros-indigo-moveit-simple-controller-manager ros-indigo-moveit-planners-ompl ros-indigo-joy ros-indigo-joy-teleop ros-indigo-teleop-tools ros-indigo-control-toolbox ros-indigo-sound-play ros-indigo-navigation ros-indigo-eband-local-planner ros-indigo-depthimage-to-laserscan ros-indigo-dynamic-reconfigure ros-indigo-openslam-gmapping ros-indigo-gmapping
+$   sudo apt-get install git python-rosinstall ros-indigo-desktop-full python-catkin-tools ros-indigo-joint-state-controller ros-indigo-twist-mux ros-indigo-ompl ros-indigo-controller-manager ros-indigo-moveit-core ros-indigo-moveit-ros-perception ros-indigo-moveit-ros-move-group ros-indigo-moveit-kinematics ros-indigo-moveit-ros-planning-interface ros-indigo-moveit-simple-controller-manager ros-indigo-moveit-planners-ompl ros-indigo-joy ros-indigo-joy-teleop ros-indigo-teleop-tools ros-indigo-control-toolbox ros-indigo-sound-play ros-indigo-navigation ros-indigo-eband-local-planner ros-indigo-depthimage-to-laserscan  ros-indigo-openslam-gmapping ros-indigo-gmapping ros-indigo-moveit-commander ros-indigo-geometry-experimental ros-indigo-hokuyo-node ros-indigo-sick-tim ros-indigo-humanoid-nav-msgs ros-indigo-moveit-ros-visualization
+
 ```
 ### Colocar no bashrc:
 ```sh
@@ -63,6 +64,14 @@ Dependências:
 ```sh
 $   sudo rosdep install --from-paths src --ignore-src --rosdistro indigo --skip-keys="opencv2 opencv2-nonfree pal_laser_filters speed_limit sensor_to_cloud"
 ```
+
+ps: Se ocorrer algum erro em [pmb2_2dnav_gazebo], subistitua o packege.xml:
+```sh
+$   cd ~/tiago_public_ws/src/pmb2_simulation/pmb2_simulation/
+$   wget ""
+$ 
+```
+
 Building the workspace:
 ```sh
 $   cd ~/tiago_public_ws
