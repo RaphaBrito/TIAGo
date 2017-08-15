@@ -68,6 +68,7 @@ $   sudo rosdep install --from-paths src --ignore-src --rosdistro indigo --skip-
 ps: Se ocorrer algum erro em [pmb2_2dnav_gazebo], subistitua o packege.xml:
 ```sh
 $   cd ~/tiago_public_ws/src/pmb2_simulation/pmb2_simulation/
+$   rm package.xml
 $   wget "https://github.com/RaphaBrito/TIAGo/blob/master/install/package.xml"
 ```
 
