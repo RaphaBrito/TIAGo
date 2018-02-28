@@ -58,7 +58,7 @@ $   source ~/.bashrc
 Set up rosdep:
 ```sh
 $   sudo rosdep init
-$   sudo rosdep update
+$   rosdep update
 ```
 Dependências:
 ```sh
@@ -78,6 +78,14 @@ $   cd ~/tiago_public_ws
 $   source /opt/ros/indigo/setup.bash
 $   catkin build
 ```
+
+ps2: Se ocorrer algum erro ao ler o manifest:
+```sh
+$	pip install -U rosdep rosinstall_generator wstool rosinstall six vcstools empy
+$	conda install setuptools
+```
+OBS: utilizar o python 2.7
+
 ## Testando a Instalação da simulação
 ```sh
 $   source ./devel/setup.bash
