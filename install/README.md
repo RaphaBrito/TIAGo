@@ -42,7 +42,7 @@ $   source ~/.bashrc
 $   mkdir ~/tiago_public_ws
 ```
 Copie o arquivo tiago_public.rosinstall para /opt/ros/indigo e também para a workspace:
-ps: Arquivo no repositório: https://github.com/RaphaBrito/TIAGo/blob/master/install/tiago_public.rosinstall
+ps: Arquivo no repositório: https://raw.githubusercontent.com/pal-robotics/tiago_tutorials/indigo-devel/tiago_public.rosinstall
 
 ```sh
 $   sudo cp -i tiago_public.rosinstall /opt/ros/indigo
