@@ -108,3 +108,10 @@ OBS: Se você tiver algum problema com permissões será nescessário liberar a 
 
 O mundo pode ser encontrado no seguinte link:
 https://github.com/RaphaBrito/TIAGo/tree/master/world
+```sh
+$   cp robocin.world ~/tiago_public_ws/src/tiago_simulation/tiago_gazebo/worlds
+$   source ~/tiago_public_ws/src/setup.bash
+$   roslaunch tiago_gazebo tiago_gazebo.launch public_sim:=true robot:=titanium world:=robocin
+
+```
+
