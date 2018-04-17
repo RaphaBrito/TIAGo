@@ -106,7 +106,7 @@ OBS: Se você tiver algum problema com permissões será nescessário liberar a 
 
 ## Mundo criado para a disciplina 
 
-O mundo pode ser encontrado no seguinte link:
+Copie o mundo que pode ser encontrado no seguinte link para a pasta abaixo:
 https://github.com/RaphaBrito/TIAGo/tree/master/world
 ```sh
 $   cp robocin.world ~/tiago_public_ws/src/tiago_simulation/tiago_gazebo/worlds
